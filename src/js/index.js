@@ -5,6 +5,7 @@ import "../assets/img/rigo-baby.jpg";
 import "../assets/img/4geeks.ico";
 //import 'breathecode-dom'; //DOM override to make JS easier to use
 import "../style/index.scss";
+
 var alpha = ["&spades;", "&clubs;", "&hearts;", "&diams;"];
 var bravo = [
   "A",
@@ -23,8 +24,11 @@ var bravo = [
   "JOKER"
 ];
 
-document.querySelector(".suit").innerHTML =
-  alpha[Math.floor(Math.random() * alpha.length)];
+let x = alpha[Math.floor(Math.random() * alpha.length)];
+
+document.querySelector(".suit").innerHTML = x;
+
+document.querySelector(".suit1").innerHTML = x;
 
 document.querySelector(".cardnumber").innerHTML =
-  bravo[Math.floor(Math.random() * alpha.length)];
+  bravo[Math.floor(Math.random() * bravo.length)];
